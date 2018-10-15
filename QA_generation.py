@@ -376,16 +376,21 @@ internet_question =
 
 	'what are the best <EQU> which i get in reasonable price ': ['i do not know what are the best <EQU>',
 											'I am not aware of price for <EQU>',
-											''],
+											"I'd tell you if i knew"],
 
-	'where can i buy <EQU> for my mac book':[],
+	'where can i buy <EQU> for my mac book':["I'm sorry i do not know about <EQU>", 
+											 "I'd tell you if i knew", 
+											 "I'm not really sure ,sorry."],
 
 	'who invented the <EQU>':['I do not know who invented the <EQU>',
 							'Do you use <EQU>',
-							'I am not more interested in <DOMAIN>'],
+							'I am not  interested in <DOMAIN>', 
+							"I'd tell you if i knew", 
+							"some one who's really talented, for sure."],
 
 	'what are the best use of <SOF>' :['do you like to use <SOF>',
-										'i do not know what is the best use of <SOF>'],
+										'i do not know what is the best use of <SOF>', 
+										"I'd tell you if i knew"],
 
 	'which company manufacture best <EQU>':[],
 	'can you give me some basic tutorial for <SOF>':[],
