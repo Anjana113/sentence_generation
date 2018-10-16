@@ -19,72 +19,91 @@ question_with_tamplate = {'sport':{
 
 sport_question_template = {
 
-"what you know about <UNK>" :['<UNK> is good but i donot know anything ',
+"what you know about <UNK>" :['<UNK> is good but i do not know anything ',
 								'I do not know anything about <UNK>',
-								'I am not more interested in <DOMAIN>',
+								'I am not interested in <DOMAIN>',
 								'I am not aware of <UNK>',
-								'I like <DOMAIN> but sorry i do not know for <UNK>',
+								'I like <DOMAIN> but sorry i do not know about <UNK>',
 								'it seems you like <DOMAIN>',
-								'Do you like <DOMAIN>. I mean you like <UNK>'],
+								'Do you like <DOMAIN>. I mean you like <UNK>', 
+                                'I am not really interested in <DOMAIN>', 
+                                'I could not find anything related to <DOMAIN> sorry.', 
+                                'I could not find anything related to <UNK>', 
+                                "I'm familiar with <DOMAIN>, but not <UNK>. sorry."],
 
 
 
 "<UNK> is good sport to play what you think":['<UNK> is good sport but i have no idea about it',
 												'I think <UNK> is good but not more interested in <sport>',
 												'Do you play <UNK>?',
-												'i think you like <DOMAIN>'],
+												'i think you like <DOMAIN>', 
+                                                'you are absolutely right, about <UNK>', 
+                                                'I love learning about <UNK>', 
+                                                'Could you teach me about <UNK>?'],
 
-"when the next match of <UNK>":['I do not know when the next match is',
+"when is the next match of <UNK>":['I do not know when the next match is',
 								'no idea for next match of <UNK>',
-								'do you like watch <UNK> ?',
+								'do you like to watch <UNK> ?',
 								'<UNK> is good sport but honestly no idea about matches',
-								'no idea for next match '],
+								'I have absolutely no idea about the next match though.', 
+                                "Sorry, I do not keep up with <UNK>"],
 
-"when the next match of <PER>": ['I do not know when the next match is',
+"when is the next match of <PER>": ['I do not know when the next match is',
 								'no idea for next match of <PER>',
-								'do you like watch <PER> ?',
+								'do you like to watch <PER> ?',
 								'<PER> is good  but honestly no idea about matches',
-								'no idea for next match ',
-								'what you think about <PER>',
-								'do you like <PER>'],
+								"no idea about <PER>'s next match",
+								'what do you think about <PER>',
+								'do you like <PER>', 
+                                'Never knew you liked <PER>', 
+                                "I've heard <PER>'s a good player, but not exactly sure when the next match is"],
 
 
-"what is your review for last match of <UNK>" :['I did not watch last match',
-												'I did not watch last match so i have bo review ',
+"what is your review for the last match of <UNK>" :['I did not watch the last match',
+												'I did not watch the last match so i have no review ',
 												'Do you like <UNK>',
 												'Do you like <DOMAIN>',
+                                                'Sorry, i forgot to watch the last match', 
+                                                "That's a tough question!", 
+                                                "what did you think? "
 												],
 "last match of <PER> is awesome" : ['i did not watch the last match of <PER> ',
-									'do you enjoy last match of <PER>',
-									'<PER> is best but i have no much idea about <DOMAIN>',
-									'Do you like <DOMAIN>'],
+									'did you enjoy the last match of <PER>',
+									'<PER> seems like the  best player but i have no idea about <DOMAIN>',
+									'Do you like <DOMAIN>?', 
+                                    "I would love to watch <PER> play."],
 
-"what you think which country play good <UNK>": ['I do not know which country play well <UNK>',
-												'what you think which country play good <UNK>',
+"what do you think,which country play's good <UNK>": ['I do not know which country play well in <UNK>',
+												'what do you think?',
 												'I think you like <UNK>',
-												'do you like <DOMAIN>'],
+												'do you like <DOMAIN>', 
+                                                "I think i trust your choice, who do you favour?", 
+                                                "I'd tell you if i knew"],
 
-"play <UNK>, we need lots of energy": ['I never play <UNK>',
-										'do you play <UNK>',
-										'every sports need spots need lots of energy'],
+"to play <UNK>, we need lots of energy": ['I never play <UNK>',
+										'do you play <UNK>?',
+										'to play sports you need lots of energy'],
 
-"where i get live telecast of <UNK> match",['you line to watch live <UNK> match',
+"where do i get live telecast of <UNK> match",['you line to watch live <UNK> match',
 										'Do you like watch match',
 										'I have no idea about live telecast of <UNK> match',
-										'Do you <UNK> match'],
+										'Do you <UNK> match', 
+                                        "I'd tell you if i knew"],
 
 "currently which tournament of <UNK> is going on " : ['I have no idea about tournament',
 											'I do not watch any tournament',
 											'do you like <DOMAIN>',
-											'do you enjoy <UNK> tournament'],
+											'do you enjoy <UNK> tournament', 
+                                            "I'd tell you if i knew", 
+                                            "sorry, I dont follow <UNK>"],
 
 'I belive <PER> is best in <UNK>' :['I do not know more about <PER>',
 									'I am not more interested in <UNK>',
 									'DO you like <UNK>',
 									'Do you like <DOMAIN>','I have no idea about <PER>','Sorry no idea about <UNK>',
-									'you are fan of <PER>'],
-
-
+									'you are fan of <PER>', 
+                                    "I trust you'r judgement"],
+    
 "Who is the best player of <UNK> in the world " : ['Do you like <UNK>','I have know idea about best player of the <UNK>',
 												'what you feel who is the best player of <UNK>',
 												'do you play <UNK>',
@@ -149,41 +168,47 @@ sport_question_template = {
 
 
 
-health_ = ['head che','stomach pain','acne','heart pain','body pain','depression','stress','cancer','fewer','cold','infection','high sugar',
+health_ = ['head ache','stomach pain','acne','heart pain','body pain','depression','stress','cancer','fewer','cold','infection','high sugar',
 			'blood pressure','dental issue','anxiety problem','skin diseases','negativity','foot pain']
 medicine_list =['Amitriptyline','Cyclizine','Midazolam','Hyoscine hydrobromide','Atropine','Lorazepam']
 
 
 health_question ={
-	'by the way i am suffering from <HEL> last four to five days what should i have to do':['you will get well soon from <HEL>',
-																	'i am never suffering from <HEL>','i am sorry can not guide for health issue'
-																	'last four five days is not so good for you.'],
+	'by the way i am suffering from <HEL> last four to five days what should i have to do':
+    ['you will get well soon from <HEL>', 'i am never suffering from <HEL>',
+     'i am sorry can not guide for health issue', 'last four five days is not so good for you.', "I've never really suffered from <HEL>"],
+	'how to over come from <HEL> . tell me some fastest way to overcome from <HEL>' :['how long your suffering from <HEL>',
+																'i do not know any fastest way to overcome  <HEL>',
+																'there should be some way to fastly overcome  <HEL> but i do not know',
+																'I do not have any idea about health related stuff', 
+                                                                                      "I'd tell you if i knew."],
 
-	'how to over come from <HEL> . tell me some fastest way to overcome from <HEL>' :['how long you suffering from <HEL>',
-																'i do not know any fastest way to overcome from <HEL>',
-																'there should some way to fastest overcome from <HEL> but i do not know',
-																'I do not have any idea about health related stuff'],
-
-	'can you tell me basic treatment for <HEL>' :['how long you suffering from <HEL>',
+	'can you tell me basic treatment for <HEL>' :['from how long are you suffering from <HEL>',
 												'sorry i do not know any treatment for <HEL>',
-												'i do not any basic treatment for <HEL>',
-												'i sorry i do not have any idea for <DOMAIN> stuff'],
+												'i do not know any basic treatment for <HEL>',
+												'i sorry i do not have any idea for <DOMAIN> stuff', 
+                                                 "I'd tell you if i knew."],
 
-	'give me list of some best doctor for <HEL>' : ['I am sorry i do not know any doctor here',
+	'give me list of some best doctors for <HEL>' : ['I am sorry i do not know any doctor here',
 													' i do not have any list of doctor for <HEL>',
 													'are you suffering from <HEL>',
 													'do you want to concern doctor for <HEL>?',
-													'do you need to go doctor for <HEL>'],
+													'do you need to go doctor for <HEL>', 
+                                                    "I'd tell you if i knew.", 
+                                                    "I might not be the best to take advice from, regarding this"],
 
 
-	'tell me which hospital i can visit for <HEL>' :['Do you want to answer for <DOMAIN> related stuff',
+	'tell me which hospital i can visit for <HEL>' :['Do you want an answer for <DOMAIN> related stuff',
 													'i am sorry i have no idea about hospital',
-													'do you want to visit hospital for <HEL>'],
+													'do you want to visit hospital for <HEL>', 
+                                                    "I'd tell you if i knew."],
 
 	'can you suggest some home remedies for <HEL>':['i have no idea for home remedies',
 													'I am not good person to answer you',
 													'I can not suggest you any home remedies',
-													'I have no idea for home remedies for <HEL>'],
+													'I have no idea for home remedies for <HEL>', 
+                                                    "I'd tell you if i knew.", 
+                                                    "you should really visit a doctor, you know?"],
 
 	'i think i have to concern some doctor for <HEL>. Can you suggest me doctor ?':['I have no idea which doctor is good for <HEL>'
 													'are you suffering from <HEL>',
@@ -208,12 +233,14 @@ health_question ={
 
 	'How much <MED> i have to take in days.' : ['i can not answer your this question',
 												'you should ask some expert to know how much <MED> you should take',
-												'i can not guide you for <DOMAIN>'],
+												'i can not guide you for <DOMAIN>', "you should really visit a doctor, you know?", "I'd tell you if i knew"],
 
 	'my age is 22. according to my age group how much <MED> dose i should take per day' : ['age group is matter but i do not have any idea for <MED>',
 													'are you suffering from <DOMAIN> issue ?',
 													'i hope you get well soon',
-													'I have zero knowledge for <DOMAIN>'],
+													'I have zero knowledge for <DOMAIN>', 
+                                                    "I'd tell you if i knew.", 
+                                                    "you should really visit a doctor, you know?"],
 
 	'how should i make <HEL> go away':['I have no idea about <HEL>',
 										'you should take care of <HEL>',
@@ -284,11 +311,14 @@ health_question ={
 	'can you tell me some side effect for <MED>' : ['i do not know what are the side effect for <MED>',
 												'I have no idea about <MED>',
 												'I am not aware of <MED>',
-												'Its better if you avoid question related to <DOMAIN>'],
+												'Its better if you avoid question related to <DOMAIN>', 
+                                                "I'd tell you if i knew"],
 
-	'tell me name of exercises that io have to do regularly':[ 'i do not know more about exercises',
+	'tell me name of exercises that io have to do regularly':[ 'i do not know much about exercises',
 															'I have no idea about exercises',
-															'this is good question but i can not help in <DOMAIN>'],
+															'this is good question but i can not help in <DOMAIN>', 
+                                                             "you should check with others who workout regularly", 
+                                                             "sorry, I've not worked out in years!"],
 
 	'how should doctor treat with patients who is suffering from <HEL>':['i do not how should doctor treat with patients',
 														"are you want me to answer related to <DOMAIN>",
@@ -346,16 +376,21 @@ internet_question =
 
 	'what are the best <EQU> which i get in reasonable price ': ['i do not know what are the best <EQU>',
 											'I am not aware of price for <EQU>',
-											''],
+											"I'd tell you if i knew"],
 
-	'where can i buy <EQU> for my mac book':[],
+	'where can i buy <EQU> for my mac book':["I'm sorry i do not know about <EQU>", 
+											 "I'd tell you if i knew", 
+											 "I'm not really sure ,sorry."],
 
 	'who invented the <EQU>':['I do not know who invented the <EQU>',
 							'Do you use <EQU>',
-							'I am not more interested in <DOMAIN>'],
+							'I am not  interested in <DOMAIN>', 
+							"I'd tell you if i knew", 
+							"some one who's really talented, for sure."],
 
 	'what are the best use of <SOF>' :['do you like to use <SOF>',
-										'i do not know what is the best use of <SOF>'],
+										'i do not know what is the best use of <SOF>', 
+										"I'd tell you if i knew"],
 
 	'which company manufacture best <EQU>':[],
 	'can you give me some basic tutorial for <SOF>':[],
