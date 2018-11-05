@@ -5,7 +5,7 @@ generate the response for out of domain query
 2. generate_data.py generate dataset where pass parameter -t=train/test and -n=number of QA pair want
 3. word_tokernized.py help its create source and target vocabulary and clean the data
 4. reader.py used for prepare data for model 
-5. try_sqs_with_attension.py create seq2seqmodel with attension and beam search
+5. try_sqs_with_attension.py create seq2seqmodel where decoder use multiple LSTMCell(either GRUCell) for encoder and dencoder.    Also,Apply attension and beam search for decoding
 6. model.py used simple encoder decoder method with beam search
 
 
