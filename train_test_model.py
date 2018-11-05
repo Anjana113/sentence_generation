@@ -71,7 +71,9 @@ def train(config):
 					saver.save(sess, filename)
 			writer.flush()
 
-	'''graph = tf.Graph()
+	'''
+	#this graph is used for model class
+	graph = tf.Graph()
 	with graph.as_default() as g:
 		model = Model(config,Train=True)
 		with tf.Session() as sess:
@@ -105,7 +107,7 @@ def evalution_test_data(config, reader_class, model, sess,ans_id2word ):
 	print(number_batches)
 
 
-	for i in range(0, 3):
+	for i in range(0, number_batches):
 		test = reader_class.get_test_data()
 		test_feed_dict = {}
 		test_feed_dict ={model.encoder_inputs : test['encoder_inputs']}
@@ -125,29 +127,6 @@ def evalution_test_data(config, reader_class, model, sess,ans_id2word ):
 			print(a)
 			print(g)
 	return np.mean(bleu_score)
-
-def get_demo(config, reader_class):
-	model = Model(config, train=False)
-	data = 'y'
-	while(True):
-		data = input('want to test data : ')
-		if data == 'n':
-			break
-
-		question = input('Enter text data : ')
-		data = reader_class.prepare_data(config, question, 15)
-		print(data)
-		graph = tf.Graph()
-		with graph.as_default():
-		# [Variable and model creation goes here.]
-			with tf.Session() as sess:
-				sess.run(tf.global_variables_initializer())
-				saver = tf.train.Saver()
-				saver.restore(sess, tf.train.latest_checkpoint(config['model_dir']))
-				feed_dict = {model.encoder_inputs : data}
-				pred_value = model.infer_value(sess,feed_dict =feed_dict)
-				pred_value = pred_value[0]
-
 
 if __name__ == '__main__':
 
